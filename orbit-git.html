@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Windows Azure</title>
+
+		<meta name="description" content="Hacking out webapps">
+		<meta name="author" content="Laurence Putra Franslay">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/theme/default.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<script>
+			// If the query includes 'print-pdf' we'll use the PDF print sheet
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Used to fade in a background when a specific slide state is reached -->
+			<div class="state-background"></div>
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Working with Git</h1>
+					<h3>For Orbital</h3>
+					<h4>How to get started, and what you need to get going</h4>
+					<p>by <a href="http://geeksphere.net">Laurence Putra</a></p>
+				</section>
+
+				<section>
+					<section>
+						<h1>whoami</h1>
+						<p>Recently graduated geek</p>
+						<p>Engineer at <a href="http://billpin.com" target="_blank">BillPin</a></p>
+						<p>Organiser at <a href="http://geekcamp.sg" target="_blank">GeekcampSG</a></p>
+						<p>Heads and contributes to a bunch of other user groups</p>
+					</section>
+					<section>
+						<h1>Experience with Git</h1>
+						<p>3 years</p>
+						<p>Moved a company to Git</p>
+						<p>Still have tons to learn</p>
+					</section>
+					<section>
+						<h2>What are you learning today</h2>
+						<p class="fragment">What can Git do?</p>
+						<p class="fragment">How do you fit it into your workflow</p>
+						<p class="fragment">Practical Demonstration with Git</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>What is Git?</h1>
+						<p class="fragment">Before we answer that ...</p>
+						<br />
+						<h3 class="fragment">Who here plays computer games?</h3>
+						<p class="fragment">(Angry birds not counted)</p>
+					</section>
+					<section>
+						<p>Git works like your checkpoint system in computer games</p>
+						<br />
+						<p class="fragment">Have checkpoints along the way</p>
+						<p class="fragment">And when you do something really stupid</p>
+						<p class="fragment">Go back to your saved game and resume</p>
+						<br />
+						<p class="fragment">No more trying to figure out what you edited</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Functionalities of Git</h2>
+						<ol>
+							<li class="fragment">clone</li>
+							<li class="fragment">add</li>
+							<li class="fragment">commit</li>
+							<li class="fragment">push</li>
+							<li class="fragment">pull</li>
+							<li class="fragment">status</li>
+						</ol>
+					</section>
+					<section>
+						<h1>git clone</h1>
+						<p>Copies an existing repository onto your machine</p>
+						<pre><code>git clone git@github.com:laurenceputra/Orbit-Git-Workshop.git</code></pre>
+					</section>
+					<section>
+						<h1>git add</h1>
+						<p class="fragment">Adds files you have changed to the changes that need to be staged</p>
+						<pre class="fragment"><code>git add folder/*</code></pre>
+						<br />
+						<p class="fragment">OR</p>
+						<pre class="fragment"><code>git add -A</code></pre>
+					</section>
+				</section>
+			</div>
+
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+
+			<!-- Presentation progress bar -->
+			<div class="progress"><span></span></div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+					{ src: 'plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

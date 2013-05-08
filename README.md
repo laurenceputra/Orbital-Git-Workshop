@@ -1,2 +1,1 @@
-Orbit-Git-Workshop
-==================
+# Orbital Git Workshop
