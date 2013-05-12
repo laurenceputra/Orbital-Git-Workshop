@@ -146,6 +146,20 @@
 						<h1>git pull</h1>
 						<p class="fragment">Gets changes your teammates make</p>
 						<pre class="fragment"><code>git pull</code></pre>
+						<p class="fragment">Assuming John and Peter pull the same stuff from yesterday, and now John updates the code.</p>
+						<p class="fragment">Peter has made changes to the code as well, and cannot push.</p>
+						<div class="fragment">
+							<p>Peter has to do a</p>
+							<pre><code>git pull</code></pre>
+							<p>which will merge the code in automatically</p>
+						</div>
+					</section>
+					<section>
+						<h1>merging</h1>
+						<pre><code>>>>>
+stuff
+<<<<</code></pre>
+						<p>Commit after you have manually merged it</p>
 					</section>
 					<section>
 						<h1>git status</h1>
@@ -156,13 +170,6 @@
 						<p class="fragment">Retrieve the old checkpointed file you did something stupid to</p>
 						<pre class="fragment"><code>git checkout folder1/*.c</code></pre>
 						<pre class="fragment"><code>git checkout folder1/app.py</code></pre>
-					</section>
-					<section>
-						<h1>merging</h1>
-						<pre><code>>>>>
-stuff
-<<<<</code></pre>
-						<p>Commit after you have manually merged it</p>
 					</section>
 				</section>
 				<section>
