@@ -31,7 +31,6 @@
 	</head>
 
 	<body>
-
 		<div class="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
@@ -42,7 +41,7 @@
 					<h3>For Orbital</h3>
 					<h4>How to get started, and what you need to get going</h4>
 					<p>by <a href="http://geeksphere.net">Laurence Putra</a></p>
-					<p><a href="http://bit.ly/OrbitalGit">Slides can be found at http://bit.ly/OrbitalGit</a></p>
+					<p>Slides can be found at <a href="http://bit.ly/orbitalgit">http://bit.ly/orbitalgit</a></p>
 				</section>
 
 				<section>
@@ -87,6 +86,24 @@
 				</section>
 				<section>
 					<section>
+						<h1>Why Git?</h1>
+						<blockquote>Yea, I get the whole idea about Git, but I can simply name my files<br />
+							<ul>
+								<li>app-v1-0.py</li>
+								<li>app-v1-1.py</li>
+								<li>app.v2-0.py</li>
+							</ul><br />
+							and sync it using Sugarsync (or Dropbox) to the rest of my team.</blockquote>
+					</section>
+					<section>
+						<h2>Yea, you can do that</h2>
+						<p class="fragment">But as you join bigger teams in future (bigger projects or work), how do you keep track what changes are made in what files?</p>
+						<p class="fragment">Or who release v2-0?</p>
+						<p class="fragment">And will v2-1 contain the updates from v2-0?</p>
+					</section>
+				</section>
+				<section>
+					<section>
 						<h2>Functionalities of Git</h2>
 						<ol>
 							<li class="fragment">clone</li>
@@ -95,6 +112,7 @@
 							<li class="fragment">push</li>
 							<li class="fragment">pull</li>
 							<li class="fragment">status</li>
+							<li class="fragment">checkout</li>
 						</ol>
 					</section>
 					<section>
@@ -134,12 +152,55 @@
 						<p class="fragment">Tells you what changes have been made to your repository</p>
 					</section>
 					<section>
+						<h1>git checkout</h1>
+						<p class="fragment">Retrieve the old checkpointed file you did something stupid to</p>
+						<pre class="fragment"><code>git checkout folder1/*.c</code></pre>
+						<pre class="fragment"><code>git checkout folder1/app.py</code></pre>
+					</section>
+					<section>
 						<h1>merging</h1>
 						<pre><code>>>>>
 stuff
 <<<<</code></pre>
 						<p>Commit after you have manually merged it</p>
 					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Best Practices</h1>
+					</section>
+					<section>
+						<h2>Meaningful commit messages</h2>
+						<p class="fragment">Recap, how to commit?</p>
+						<pre class="fragment"><code>git commit -m "message"</code></pre>
+					</section>
+					<section>
+						<h3>Bad commit messages</h3>
+						<pre class="fragment"><code>stuff</code></pre>
+						<pre class="fragment"><code>It works!</code></pre>
+						<pre class="fragment"><code>You should have trusted me. </code></pre>
+						<pre class="fragment"><code>Committed some changes</code></pre>
+						<pre class="fragment"><code>ALL SORTS OF THINGS</code></pre>
+						<pre class="fragment"><code>This is a basic implementation that works. </code></pre>
+						<p class="fragment">More bad examples over at <a href="http://whatthecommit.com/" target="_blank">http://whatthecommit.com/</a></p>
+					</section>
+					<section>
+						<h2>Commit frequency</h2>
+						<p>How often should you commit?</p>
+						<p class="fragment">Every new feature</p>
+						<p class="fragment">When they are working!</p>
+					</section>
+					<section>
+						<h2>Others</h2>
+						<p>Look up branching if you have time</p>
+						<p>Read up more about Git as you use it more</p>
+						<p>Learn to RTFM</p>
+						<p class="fragment">When all fails...</p>
+						<p class="fragment">I'll be around</p>
+					</section>
+				</section>
+				<section>
+					<h1>Quick demo</h1>
 				</section>
 				<section>
 					<h1>Live Exercise</h1>
@@ -157,7 +218,7 @@ stuff
 			</div>
 
 		</div>
-
+		<a class="fork-reveal" href="https://github.com/laurenceputra/Orbital-Git-Workshop" style="display: block;"><img alt="Fork me on GitHub" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" style="position: absolute; top: 0; right: 0; border: 0;"></img></a>
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.min.js"></script>
 
